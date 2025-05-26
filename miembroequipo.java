@@ -1,11 +1,11 @@
-public class miembroequipo { 
+public class MiembroEquipo { 
     private Integer id;
     private String nombre;
     private String apellidos;
     private Integer edad;
 
     // Constructor
-    public miembroequipo(Integer id, String nombre, String apellidos, Integer edad) {
+    public MiembroEquipo(Integer id, String nombre, String apellidos, Integer edad) {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
