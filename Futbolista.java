@@ -1,4 +1,4 @@
-public class Futbolista extends miembroequipo {
+public class Futbolista extends MiembroEquipo {
     private Integer goles;
     private String demarcacion;
 
@@ -26,11 +26,17 @@ public class Futbolista extends miembroequipo {
         this.demarcacion = demarcacion;
     }
 
-    // Métodos específicos
-    public void jugarPartido() {
-        System.out.println("Jugando partido...");
-    }
-
-    public void entrenar() {
-        System.out.println("Entrenando...");
+        // Métodos específicos
+        public void jugarPartido() {
+            System.out.println("Jugando partido...");
+        }
+    
+        public void entrenar() {
+            System.out.println("Entrenando...");
+        }
+    
+        @Override
+        public void concentrarse() {
+            System.out.println("Futbolista concentrándose...");
+        }
     }
