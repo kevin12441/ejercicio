@@ -26,17 +26,23 @@ public class Futbolista extends MiembroEquipo {
         this.demarcacion = demarcacion;
     }
 
-        // Métodos específicos
-        public void jugarPartido() {
-            System.out.println("Jugando partido...");
-        }
-    
-        public void entrenar() {
-            System.out.println("Entrenando...");
-        }
-    
-        @Override
-        public void concentrarse() {
-            System.out.println("Futbolista concentrándose...");
-        }
+    // Métodos específicos
+    public void jugarPartido() {
+        System.out.println("Jugando partido...");
     }
+
+    public void entrenar() {
+        System.out.println("Entrenando...");
+    }
+
+    @Override
+    public void concentrarse() {
+        System.out.println("Futbolista concentrándose...");
+    }
+
+    // Sobrescritura del método viajar
+    @Override
+    public void viajar() {
+        System.out.println("El futbolista viaja con el equipo para el próximo partido...");
+    }
+}

@@ -24,4 +24,16 @@ public class Entrenador extends MiembroEquipo {
     public void dirigirEntrenamiento() {
         System.out.println("Dirigiendo entrenamiento...");
     }
+
+    // Sobrescritura del método concentrarse
+    @Override
+    public void concentrarse() {
+        System.out.println("El entrenador se concentra planificando estrategias...");
+    }
+
+    // Sobrescritura del método viajar
+    @Override
+    public void viajar() {
+        System.out.println("El entrenador viaja con el equipo para coordinar el próximo partido...");
+    }
 }

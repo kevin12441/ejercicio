@@ -3,11 +3,13 @@ public class Masajista extends MiembroEquipo {
     private Integer aniosExperiencia;
 
     // Constructor
-    public Masajista(Integer id, String nombre, String apellidos, Integer edad, String titulacion, Integer aniosExperiencia) {
-        super(id, nombre, apellidos, edad); // Llama al constructor de la superclase
+    public Masajista(int id, String nombre, String apellidos, int edad, String titulacion, int aniosExperiencia) {
+        super(id, nombre, apellidos, edad);
         this.titulacion = titulacion;
         this.aniosExperiencia = aniosExperiencia;
     }
+
+
 
     // Getters y Setters
     public String getTitulacion() {
@@ -29,5 +31,17 @@ public class Masajista extends MiembroEquipo {
     // Método específico
     public void darMasaje() {
         System.out.println("Dando masaje...");
+    }
+
+    // Sobrescritura del método concentrarse
+    @Override
+    public void concentrarse() {
+        System.out.println("El masajista se concentra preparando sus técnicas de masaje...");
+    }
+
+    // Sobrescritura del método viajar
+    @Override
+    public void viajar() {
+        System.out.println("El masajista viaja con el equipo llevando su equipo de trabajo...");
     }
 }
